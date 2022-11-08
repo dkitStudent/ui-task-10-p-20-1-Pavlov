@@ -144,7 +144,7 @@
                         Foreground="#331016"
                         Text="ЗАКАЗЧИК: " />
                     <TextBlock
-                        Margin="5 0"
+                        Margin="5,0"
                         Foreground="LightGray"
                         Text="Test T.M." />
                 </StackPanel>
@@ -154,7 +154,7 @@
                         Foreground="#331016"
                         Text="ОПЛАЧЕН: " />
                     <TextBlock
-                        Margin="5 0"
+                        Margin="5,0"
                         Foreground="LightGray"
                         Text="10.10.2369 10:24:47" />
                 </StackPanel>
@@ -164,7 +164,7 @@
                         Foreground="#331016"
                         Text="№ ЗАКАЗА: " />
                     <TextBlock
-                        Margin="5 0"
+                        Margin="5,0"
                         Foreground="LightGray"
                         Text="1" />
                 </StackPanel>
@@ -174,73 +174,380 @@
                         Foreground="#331016"
                         Text="АДРЕС ДОСТАВКИ: " />
                     <TextBlock
-                        Margin="5 0"
+                        Margin="5,0"
                         Foreground="LightGray"
                         Text="САМОВЫВОЗ" />
                 </StackPanel>
             </StackPanel>
-            <Border Grid.Row="1" BorderBrush="#FFCD42" BorderThickness="1" Margin="10" CornerRadius="5">
-                <ListView Margin="0 0 4 0" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <Border
+                Grid.Row="1"
+                Margin="10"
+                BorderBrush="#FFCD42"
+                BorderThickness="1"
+                CornerRadius="5">
+                <ListView Margin="0,0,4,0" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                     <ListViewItem>
                         <Grid Width="400">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="1*"/>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="2*"/>
-                                <ColumnDefinition Width="1*"/>
-                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="1*" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="1*" />
+                                <ColumnDefinition Width="3*" />
                             </Grid.ColumnDefinitions>
-                            <Image Grid.Column="0" Source="Images/lvi_1.jpg" Margin="5"/>
-                            <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="5">
-                                <TextBlock Text="Классический борщ" Foreground="#331016" FontSize="14" />
-                                <TextBlock Text="250/35/30" Foreground="#331016" FontSize="10"/>
+                            <Image
+                                Grid.Column="0"
+                                Margin="5"
+                                Source="Images/lvi_1.jpg" />
+                            <StackPanel
+                                Grid.Column="1"
+                                Margin="5"
+                                VerticalAlignment="Center">
+                                <TextBlock
+                                    FontSize="14"
+                                    Foreground="#331016"
+                                    Text="Классический борщ" />
+                                <TextBlock
+                                    FontSize="10"
+                                    Foreground="#331016"
+                                    Text="250/35/30" />
                             </StackPanel>
-                            <TextBlock Grid.Column="2" Text="195 ₽" Foreground="#331016" VerticalAlignment="Center" Margin="5"/>
-                            <TextBlock Grid.Column="3" Text="5" Foreground="#331016" VerticalAlignment="Center" Margin="5"/>
-                            <TextBlock Grid.Column="4" Text="975 ₽" Foreground="#331016" VerticalAlignment="Center" Margin="5"/>
+                            <TextBlock
+                                Grid.Column="2"
+                                Margin="5"
+                                VerticalAlignment="Center"
+                                Foreground="#331016"
+                                Text="195 ₽" />
+                            <TextBlock
+                                Grid.Column="3"
+                                Margin="5"
+                                VerticalAlignment="Center"
+                                Foreground="#331016"
+                                Text="5" />
+                            <TextBlock
+                                Grid.Column="4"
+                                Margin="5"
+                                VerticalAlignment="Center"
+                                Foreground="#331016"
+                                Text="975 ₽" />
                         </Grid>
                     </ListViewItem>
                     <ListViewItem>
                         <Grid Width="400">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="1*"/>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="2*"/>
-                                <ColumnDefinition Width="1*"/>
-                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="1*" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="1*" />
+                                <ColumnDefinition Width="3*" />
                             </Grid.ColumnDefinitions>
-                            <Image Grid.Column="0" Source="Images/lvi_2.jpg" Margin="5"/>
-                            <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="5">
-                                <TextBlock Text="Солянка сборная мясная" Foreground="#331016" FontSize="14" />
-                                <TextBlock Text="250/20" Foreground="#331016" FontSize="10"/>
+                            <Image
+                                Grid.Column="0"
+                                Margin="5"
+                                Source="Images/lvi_2.jpg" />
+                            <StackPanel
+                                Grid.Column="1"
+                                Margin="5"
+                                VerticalAlignment="Center">
+                                <TextBlock
+                                    FontSize="14"
+                                    Foreground="#331016"
+                                    Text="Солянка сборная мясная" />
+                                <TextBlock
+                                    FontSize="10"
+                                    Foreground="#331016"
+                                    Text="250/20" />
                             </StackPanel>
-                            <TextBlock Grid.Column="2" Text="195 ₽" Foreground="#331016" VerticalAlignment="Center" Margin="5"/>
-                            <TextBlock Grid.Column="3" Text="5" Foreground="#331016" VerticalAlignment="Center" Margin="5"/>
-                            <TextBlock Grid.Column="4" Text="975 ₽" Foreground="#331016" VerticalAlignment="Center" Margin="5"/>
+                            <TextBlock
+                                Grid.Column="2"
+                                Margin="5"
+                                VerticalAlignment="Center"
+                                Foreground="#331016"
+                                Text="195 ₽" />
+                            <TextBlock
+                                Grid.Column="3"
+                                Margin="5"
+                                VerticalAlignment="Center"
+                                Foreground="#331016"
+                                Text="5" />
+                            <TextBlock
+                                Grid.Column="4"
+                                Margin="5"
+                                VerticalAlignment="Center"
+                                Foreground="#331016"
+                                Text="975 ₽" />
                         </Grid>
                     </ListViewItem>
                     <ListViewItem>
                         <Grid Width="400">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="1*"/>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="2*"/>
-                                <ColumnDefinition Width="1*"/>
-                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="1*" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="1*" />
+                                <ColumnDefinition Width="3*" />
                             </Grid.ColumnDefinitions>
-                            <Image Grid.Column="0" Source="Images/lvi_3.jpg" Margin="5"/>
-                            <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="5">
-                                <TextBlock Text="Домашняя окрошка на квасе" Foreground="#331016" FontSize="14" />
-                                <TextBlock Text="250/20" Foreground="#331016" FontSize="10"/>
+                            <Image
+                                Grid.Column="0"
+                                Margin="5"
+                                Source="Images/lvi_3.jpg" />
+                            <StackPanel
+                                Grid.Column="1"
+                                Margin="5"
+                                VerticalAlignment="Center">
+                                <TextBlock
+                                    FontSize="14"
+                                    Foreground="#331016"
+                                    Text="Домашняя окрошка на квасе" />
+                                <TextBlock
+                                    FontSize="10"
+                                    Foreground="#331016"
+                                    Text="250/20" />
                             </StackPanel>
-                            <TextBlock Grid.Column="2" Text="195 ₽" Foreground="#331016" VerticalAlignment="Center" Margin="5"/>
-                            <TextBlock Grid.Column="3" Text="5" Foreground="#331016" VerticalAlignment="Center" Margin="5"/>
-                            <TextBlock Grid.Column="4" Text="975 ₽" Foreground="#331016" VerticalAlignment="Center" Margin="5"/>
+                            <TextBlock
+                                Grid.Column="2"
+                                Margin="5"
+                                VerticalAlignment="Center"
+                                Foreground="#331016"
+                                Text="195 ₽" />
+                            <TextBlock
+                                Grid.Column="3"
+                                Margin="5"
+                                VerticalAlignment="Center"
+                                Foreground="#331016"
+                                Text="5" />
+                            <TextBlock
+                                Grid.Column="4"
+                                Margin="5"
+                                VerticalAlignment="Center"
+                                Foreground="#331016"
+                                Text="975 ₽" />
                         </Grid>
                     </ListViewItem>
                 </ListView>
             </Border>
-            
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+                <TextBox
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Margin="10"
+                    VerticalAlignment="Top"
+                    materialDesign:HintAssist.Hint="Штрих-код"
+                    Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                <TextBox
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Margin="10"
+                    VerticalAlignment="Top"
+                    materialDesign:HintAssist.Hint="Кол-во"
+                    Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                <TextBox
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Margin="10"
+                    VerticalAlignment="Top"
+                    materialDesign:HintAssist.Hint="Скидка"
+                    Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                <TextBox
+                    Grid.Row="0"
+                    Grid.Column="3"
+                    Margin="10"
+                    VerticalAlignment="Top"
+                    materialDesign:HintAssist.Hint="Дополнение"
+                    Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                <Button
+                    Grid.Row="1"
+                    Grid.ColumnSpan="4"
+                    Width="Auto"
+                    Height="Auto"
+                    Margin="10"
+                    BorderBrush="#FFCD42"
+                    BorderThickness="1"
+                    Content="Заказ оплачен"
+                    Style="{StaticResource MaterialDesignFlatButton}" />
+            </Grid>
+        </Grid>
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.5*" />
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="3*" />
+            </Grid.RowDefinitions>
+            <materialDesign:ColorZone Margin="5">
+                <TextBlock
+                    Margin="20"
+                    HorizontalAlignment="Center"
+                    FontSize="40"
+                    Text="ИТОГО : 2 825 ₽" />
+            </materialDesign:ColorZone>
+            <Border
+                Grid.Row="1"
+                Margin="5"
+                BorderBrush="#FFCD42"
+                BorderThickness="1"
+                CornerRadius="5">
+                <Grid>
+                    <Image
+                        Margin="10,10,10,10"
+                        Source="Images/lvi_4.jpg"
+                        Stretch="UniformToFill" />
+                </Grid>
+            </Border>
+            <Grid Grid.Row="2" Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+
+                <Button
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Width="Auto"
+                    Height="Auto"
+                    Margin="5"
+                    BorderBrush="#FFCD42"
+                    BorderThickness="1"
+                    Content="7" />
+                <Button
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Width="Auto"
+                    Height="Auto"
+                    Margin="5"
+                    BorderBrush="#FFCD42"
+                    BorderThickness="1"
+                    Content="8" />
+                <Button
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Width="Auto"
+                    Height="Auto"
+                    Margin="5"
+                    BorderBrush="#FFCD42"
+                    BorderThickness="1"
+                    Content="9" />
+                <Button
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Width="Auto"
+                    Height="Auto"
+                    Margin="5"
+                    BorderBrush="#FFCD42"
+                    BorderThickness="1"
+                    Content="4" />
+                <Button
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Width="Auto"
+                    Height="Auto"
+                    Margin="5"
+                    BorderBrush="#FFCD42"
+                    BorderThickness="1"
+                    Content="5" />
+                <Button
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    Width="Auto"
+                    Height="Auto"
+                    Margin="5"
+                    BorderBrush="#FFCD42"
+                    BorderThickness="1"
+                    Content="6" />
+                <Button
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Width="Auto"
+                    Height="Auto"
+                    Margin="5"
+                    BorderBrush="#FFCD42"
+                    BorderThickness="1"
+                    Content="1" />
+                <Button
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Width="Auto"
+                    Height="Auto"
+                    Margin="5"
+                    BorderBrush="#FFCD42"
+                    BorderThickness="1"
+                    Content="2" />
+                <Button
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Width="Auto"
+                    Height="Auto"
+                    Margin="5"
+                    BorderBrush="#FFCD42"
+                    BorderThickness="1"
+                    Content="3" />
+                <Button
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Width="Auto"
+                    Height="Auto"
+                    Margin="5"
+                    BorderBrush="#FFCD42"
+                    BorderThickness="1"
+                    Content="C" Cursor="Hand" />
+                <Button
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    Width="Auto"
+                    Height="Auto"
+                    Margin="5"
+                    BorderBrush="#FFCD42"
+                    BorderThickness="1"
+                    Content="0" />
+                <Button
+                    Grid.Row="3"
+                    Grid.Column="2"
+                    Width="Auto"
+                    Height="Auto"
+                    Margin="5"
+                    BorderBrush="#FFCD42"
+                    BorderThickness="1"
+                    Content="." />
+                <Button
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Width="Auto"
+                    Height="Auto"
+                    Margin="5"
+                    BorderBrush="#FFCD42"
+                    BorderThickness="1"
+                    Content="Практическая работа №10"
+                    Cursor="Hand" />
+                <Button
+                    Grid.Row="4"
+                    Grid.Column="2"
+                    Width="Auto"
+                    Height="Auto"
+                    Margin="5"
+                    BorderBrush="#FFCD42"
+                    BorderThickness="1"
+                    Content="ОТМЕНА"
+                    Cursor="Hand"
+                    Style="{StaticResource MaterialDesignFlatButton}" />
+            </Grid>
         </Grid>
     </Grid>
 </Window>

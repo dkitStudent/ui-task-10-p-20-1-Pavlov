@@ -10,6 +10,9 @@
 
   <ItemGroup>
     <None Remove="Images\lvi_1.jpg" />
+    <None Remove="Images\lvi_2.jpg" />
+    <None Remove="Images\lvi_3.jpg" />
+    <None Remove="Images\lvi_4.jpg" />
     <None Remove="Images\lvi_5.jpg" />
   </ItemGroup>
 
@@ -20,6 +23,9 @@
 
   <ItemGroup>
     <Resource Include="Images\lvi_1.jpg" />
+    <Resource Include="Images\lvi_2.jpg" />
+    <Resource Include="Images\lvi_3.jpg" />
+    <Resource Include="Images\lvi_4.jpg" />
     <Resource Include="Images\lvi_5.jpg" />
   </ItemGroup>
 
